@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:#EC6083;
+
+}
+
+.container {
+    width: 40%;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #654A8F;
+}
+
+img {
+    width: 100%;
+}
+
+div label {
+    color: white;
+}
+
+#header {
+    font-size:  20px;
+}

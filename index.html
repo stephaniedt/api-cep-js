@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaCep</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="bg-dark text-light p-3" id="header"><span> <i class="fas fa-search-location"></i> Pesquise seu
+            CEP:</span></header>
+
+    <main class="container">
+        <div class="truck"></div>
+            <img src="img/truck.gif" alt="imagem caminhão">
+        </div>
+
+        <div>
+            <label for="">CEP</label>
+            <div id="respostaErro">
+                
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marked-alt"></i></span>
+                </div>
+                <input type="number" onblur="searchCEP()" id="getcep"  min="0" max="8" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <label for="">Rua</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-road"></i></span>
+                </div>
+                <input type="text" id = "rua" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <label for="">Número</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-list-ol"></i></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <label for="">Complemento</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="far fa-plus-square"></i></span>
+                </div>
+                <input type="text" class="form-control" id = "complemento" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <label for="">Bairro</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-house-user"></i></span>
+                </div>
+                <input type="text" class="form-control" id="bairro" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <label for="">UF</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-city"></i></span>
+                </div>
+                <input type="text" id="uf" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d7fd1a01ef.js" crossorigin="anonymous"></script>
+    <script src="js/cep.js"></script>
+</body>
+
+</html>
