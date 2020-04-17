@@ -6,7 +6,7 @@ let uf = document.getElementById('uf')
 async function searchCEP () {
 
     let inputCep = document.getElementById('getcep').value
-    let pesquisaCep = await fetch(`http://viacep.com.br/ws/${inputCep}/json/`)
+    let pesquisaCep = await fetch(`viacep.com.br/ws/${inputCep}/json/`)
 
     let dadosDoCep =  await pesquisaCep.json()
 
